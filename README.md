@@ -1,2 +1,2 @@
-# TyperTraining
-Una aplicación que te permite medir tu velocidad de escritura en palabras por minuto (PPM), ayudándote a mejorar tu destreza en el teclado.
+# ScreenShots
+![Login](https://cdn.discordapp.com/attachments/721077787842052136/1222682910403068045/image.png?ex=66171b32&is=6604a632&hm=e077e54eb557f8918368cb0390c31dd0a6870160c3caa703c34d64e6876192ed&)
