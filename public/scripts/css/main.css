@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "VT323", monospace;
+    overflow: hidden;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #08048c;
+    transition: all 0.2s ease-in-out;
+    overflow: hidden;
+}
+.margen{
+    width: 971px;
+    height: 512px;
+    background-color: rgb(181, 181, 181);
+    clip-path: polygon(0% 0%, 20% 0%,20% 5%, 100% 5%, 100% 100%, 0% 100%);
+    box-shadow: 50px 50px 20px 50px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+.consola{
+    width: 98%;
+    height: 92%;
+    margin-top: 3.5%;
+    margin-left: 1.0%;
+    background-color: black;
+    color: white;
+    padding-top: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 361px;
+    height: 357px;
+    display: none;
+}
+.modal-margen{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(181, 181, 181);
+    clip-path: polygon(0% 0%, 20% 0%,20% 5%, 100% 5%, 100% 100%, 0% 100%);
+    box-shadow: 50px 50px 20px 50px rgba(0, 0, 0, 0.5);
+    position: relative;
+    padding-top: 7.5%;
+}
+.modal-consola{
+    width: 96%;
+    height: 98.7%;
+    margin-left: 2%;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.main-text{
+    margin: 25px;
+    margin-top: 0;
+    font-size: 1.8em;
+}
+.temporizador{
+    height: 30%;
+    margin: 25px;
+    border-top: dotted 4px white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.temporizador a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+.temporizador a svg{
+    width: 60px;
+    height: 60px;
+    fill: white;
+    transition: all 0.3s ease-in-out;
+}
+.temporizador a:hover svg{
+    width: 65px;
+    height: 65px;
+    fill: rgb(164, 164, 164);
+}
+.temporizador a:hover{
+    color: rgb(164, 164, 164);
+}
+.barra-carga {
+    width: 40%;
+    height: 30px;
+    background-color: black;
+    border: solid 3px white;
+    position: relative;
+  }
+  
+.barra-progreso {
+    width: 0%;
+    height: 100%;
+    background-color: white;
+    transition: width 1s linear;
+}
+.porcentaje {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.5em;
+  }
+.titulo{
+    margin: 0;
+    position: absolute;
+    left: 20px;
+    font-size: 1.7em;
+    color: rgb(72, 72, 72);
+}
+.bienvenida{
+    margin: 25px;
+    margin-bottom: 0;
+    background-color: white;
+    color: black;
+    width: 45%;
+    text-align: center;
+}
+.bienvenida h1{
+    margin: 0;
+}
+.desaparecer{
+    animation: desaparecer 0.2s ease-in-out;
+}
+.aparecer{
+    animation: aparecer 0.2s ease-in-out;
+}
+.active{
+    filter: blur(20px);
+}
+.titulo-modal{
+    margin: 0;
+    position: absolute;
+    left: 8px;
+    top: 6px;
+    font-size: 0.9em;
+    color: rgb(72, 72, 72);
+}
+.puntuacion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+#replay{
+    position: absolute;
+    bottom: 25px;
+    background: none;
+    color: white;
+    border: 3px solid white;
+    padding: 8px;
+    font-family: "VT323", monospace;
+    font-size: 1.3em;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+#replay:hover{
+    background-color: white;
+    color: black;
+}
+.trofeo{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5px;
+}
+.recordMostrar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    width: 83.2px;
+    height: 76px;
+}
+
+
+.nube table {
+    border-collapse: collapse;
+    margin: auto;
+}
+
+.nube td {
+    width: 7px;
+    height: 7px;
+    min-width: 7px;
+    min-height: 7px;
+    padding: 0;
+}
+
+.blanco {
+    background-color: white;
+}
+.negro {
+    background-color: white;
+}
+.nada {
+    background: none;
+}
+
+#nube1{
+    animation: mover1 15s linear infinite alternate;
+}
+#nube2{
+    animation: mover2 20s linear infinite alternate;
+}
+#nube3{
+    animation: mover3 25s linear infinite alternate;
+}
+#nube4{
+    animation: mover4 30s linear infinite alternate;
+}
+
+
+.bottom{
+    width: 100%;
+    height: 3vh;
+    background-color: white;
+    bottom: 0;
+    position: absolute;
+    clip-path: polygon(0 70%, 25% 30%, 50% 70%, 75% 30%, 100% 70%, 100% 100%, 0 100%);
+    overflow: hidden;
+}
+
+
+
+@keyframes desaparecer {
+    0% {
+      opacity: 1; 
+    }
+    100% {
+      opacity: 0;
+    }
+}
+@keyframes aparecer {
+    0% {
+      opacity: 0; 
+      transform: translateY(20px); 
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+@keyframes agrandar {
+    0% {
+      width: 60px; 
+    }
+    100% {
+      width: 80px;
+    }
+}
+
+@keyframes mover1 {
+    0% { left: 20px; }
+    50% { left: -12% }
+    50.01% { left: 100%; }
+    100% { left: calc(-12%); }
+}
+
+@keyframes mover2 {
+    0% { left: 30%; }
+    50% { left: -12% }
+    50.01% { left: 100%; }
+    100% { left: calc(-12%); }
+}
+
+@keyframes mover3 {
+    0% { left: 70%; }
+    50% { left: -12% }
+    50.01% { left: 100%; }
+    100% { left: calc(-12%); }
+}
+
+@keyframes mover4 {
+    0% { left: 85%; }
+    50% { left: -12% }
+    50.01% { left: 100%; }
+    100% { left: calc(-12%); }
+}
