@@ -204,7 +204,7 @@ app.get("/cerrar-sesion", (req,res) =>{
 })
 
 //LEVANTAMIENTO DEL SERVER
-const PUERTO = process.env.port || 3986;
+const PUERTO = process.env.PORT || 3000;
 
 app.listen(PUERTO, ()=>{
     console.log(`Servidor creado mi pana, en el puerto ${PUERTO}...`);
