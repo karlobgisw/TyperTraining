@@ -1,5 +1,5 @@
 //importamos modulo mysql para la conexion con la bd
-let mysql = require('mysql');
+let mysql = require('mysql2');
 
 //Creamos la conexion como el metodo y ponemos las propiedades de la conexion
 let conexion = mysql.createConnection({
