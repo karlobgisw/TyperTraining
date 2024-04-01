@@ -94,7 +94,7 @@ document.addEventListener("keypress", (e)=>{
                     },
                     body: JSON.stringify(datos)
                 }
-                fetch(`http://localhost:3986/record`, info) //CAMBIAR EN AMBIENTE REAAAAAAAAAAAAAAAAAAAAAAAAAAAL
+                fetch(`https://typertraining-production-259c.up.railway.app/record`, info) //CAMBIAR EN AMBIENTE REAAAAAAAAAAAAAAAAAAAAAAAAAAAL
                 .then(response =>{
                     if(!response.ok){
                         console.log("No se pudo agregar los datos");
@@ -106,7 +106,7 @@ document.addEventListener("keypress", (e)=>{
             }
             let boton = document.getElementById("replay");
             boton.addEventListener("click", ()=>{
-                location.reload(); //CAMBIAR EN AMBIENTE REAAAAAAAAAAAAAL
+                location.reload();
             })
           }
         }, 1000); // Actualizar la barra de carga cada segundo
