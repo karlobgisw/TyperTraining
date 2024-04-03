@@ -79,12 +79,42 @@ span{
     color: #2fcb7b;
     font-weight: bolder;
 }
-.registro form input::placeholder{
+.inputs::placeholder{
     font-family: "VT323", monospace;
     font-size: 25px;
     color: #24955a;
     font-weight: bolder;
     padding-left: 15px;
+}
+.inputsIncorrecto{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 6px;
+    margin-right: 37px;
+    background-color: #8e1f1f;
+    border: 5px solid #c82b2b;
+    color: #e33d3d;
+    font-weight: bolder;
+}
+.inputsIncorrecto::placeholder{
+    font-family: "VT323", monospace;
+    font-size: 25px;
+    color: #e33d3d;
+    font-weight: bolder;
+    padding-left: 15px;
+}
+.invalid{
+    margin: 0;
+    padding: 0;
+    color: white;
+    margin-bottom: 10px;
+    margin-left: 14px;
+    font-size: 14.6px;
+}
+.invalidDiv{
+    background-color: #e33d3d;
+    margin-bottom: 14px;
+    display: none;
 }
 .submits{
     display: flex;
