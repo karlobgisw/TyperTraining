@@ -138,7 +138,16 @@ app.post("/registro", [
                     res.render('registro', {Validaciones});
                 }
             }else{
-                res.redirect(`/`);
+                conexion.query('SELECT * FROM usuarios WHERE username = ?', [username], async(error, results) =>{
+                    if(error){
+                        console.log(error);
+                        res.send(error);
+                    }
+                    else{
+                        req.session.user_id = results[0].id;
+                        res.redirect('/inicio');
+                    }
+                })
             }
         })
     }
