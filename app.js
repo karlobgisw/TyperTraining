@@ -134,7 +134,7 @@ app.post("/registro", [
             if(error){
                 if(error.code === 'ER_DUP_ENTRY'){
                     console.error("Entrada Duplicada");
-                    const Validaciones = [{msg: 'Ya hay un usuario registrado con ese nombre'}];
+                    const Validaciones = [{msg: 'Ya hay un usuario registrado con ese nombre y/o email'}];
                     res.render('registro', {Validaciones});
                 }
             }else{
